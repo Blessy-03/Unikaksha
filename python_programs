@@ -1,0 +1,38 @@
+# fee collection
+
+x=input("enter the student type\n")
+tf=float(input("enter tuition fee\n"))
+if x=="MSDS":
+    bf=float(input("enter bus fee\n"))
+    print("the fees to be paid by the student is rs."+"%.2f"%(tf+bf))
+elif x=="MSH":
+    hf=float(input("enter hostel fee\n"))
+    print("the fees to be paid by the student is rs."+"%.2f"%(tf+hf))
+elif x=="MGDS":
+    bf=float(input("enter bus fee\n"))
+    print("the fees to be paid by the student is rs."+"%.2f"%(150/100*tf)+bf)
+elif x=="MGSH":
+    hf=float(input("enter hostel fee\n"))
+    print("the fees to be paid by the student is rs."+"%.2f"%((150/100*tf)+hf))
+else:
+    print("invalid input\n")
+    
+# Age detector
+
+by=int(input("Enter year of birth\n"))
+cy=int(input("Enter current year\n"))
+by=by+1900
+cy=cy+2000
+if (by>cy):
+    if (by-cy>100):
+        print("your age is",(by-cy)-100)
+    else:
+        print("your age is",by-cy)
+else:
+    if (cy-by>100):
+        print("your age is",cy-by-100)
+    else:
+        print("your age is",cy-by)
+    
+
+    
